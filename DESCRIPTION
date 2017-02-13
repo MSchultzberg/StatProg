@@ -8,3 +8,4 @@ Description: This package contains data for lectures and labs.
 License: CC0
 Encoding: UTF-8
 LazyData: true
+Depends:  R (>= 2.10)

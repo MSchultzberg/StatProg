@@ -1,8 +1,9 @@
 \docType{data}
 \name{titanic}
 \alias{titanic}
+\alias{ttn}
 \title{Titanic data}
-\format{A data frame with 891 rows and 12 variables. The variables are:
+\format{\code{titanic} is a data frame with 891 rows and 12 variables, and \code{ttn} is a date frame with 1,309 rows and 13 variables with the additional variable being \code{Train} to indicate which part of the sample is the training data. In total, there are 891 training samples and 418 test samples.  The variables are:
     \describe{
       \item{PassengerId}{The ID of the passenger}
       \item{Survived}{1 indicates survival}
@@ -16,11 +17,12 @@
       \item{Fare}{Passenger fare}
       \item{Cabin}{Cabin}
       \item{Embarked}{Port of embarkation}
+      \item{Train}{Logical indicating if the data is to be used for training or testing.}
     }}
 \usage{
   data(titanic)
 }
-\description{
-  This dataset is a transformed version of what is available in \code{\link[titanic]{titanic_train}}.
-}
 
+\description{
+  Data describing survival on the Titanic.
+}
